@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeba Rosa k - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Jeba Rosa k</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact" class="contact-btn">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">Hey I'm <span class="highlight">Jeba Rosa k</span></h1>
+                <h2 class="hero-subtitle">I'm a <span class="typewriter"></span><span class="cursor">|</span></h2>
+                <p class="hero-description">
+                    Student at Kristu Jayanti University with a growing passion for web development and digital creativity.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#about" class="btn primary-btn">More About Me</a>
+                </div>
+            </div>
+            <!-- Empty space previously occupied by the image -->
+            <div class="hero-shape">
+                <div class="abstract-shape">
+                    <!-- Only abstract shape to maintain aesthetics, no photo as requested -->
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="section-container">
+                <h2 class="section-title">About Me</h2>
+                <div class="section-content text-box">
+                    <p>Hi, I’m Jeba Rosa k, a student at Kristu Jayanti University with a growing passion for web development and digital creativity. I enjoy turning ideas into clean, modern, and user-friendly designs.</p>
+                    <p>I’m currently learning and building my skills in technologies like HTML, CSS, and JavaScript, and I’m always curious to explore more. I love creating visually appealing and functional websites that give a smooth user experience.</p>
+                    <p>I’m a motivated and creative person who enjoys learning new things, improving every day, and working towards becoming a skilled developer in the future.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section bg-light">
+            <div class="section-container">
+                <h2 class="section-title">Skills 💡</h2>
+                <div class="section-content">
+                    <p class="skills-intro">I have a growing skill set in web development and design, with a strong focus on creating clean and user-friendly interfaces.</p>
+                    
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <h3>Frontend Development</h3>
+                            <p>HTML, CSS, JavaScript</p>
+                        </div>
+                        <div class="skill-card">
+                            <h3>Other Skills</h3>
+                            <p>Problem-solving, creativity, quick learning, attention to detail</p>
+                        </div>
+                    </div>
+                    
+                    <p class="skills-outro">I am continuously improving my skills by practicing, learning new technologies, and working on small projects to gain real experience.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section">
+            <div class="section-container">
+                <h2 class="section-title">Education 🎓</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Kristu Jayanti University</h3>
+                            <p class="timeline-date">Currently Pursuing</p>
+                            <p>Currently, I am pursuing my degree at Kristu Jayanti University, where I am further enhancing my knowledge and skills, especially in the field of web development and modern technologies.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Mount Carmel Matric Higher Secondary School</h3>
+                            <p class="timeline-date">Completed Schooling</p>
+                            <p>I completed my schooling here, where I pursued my higher secondary education in the PCMC stream (Physics, Chemistry, Mathematics, Computer Science). During my school years, I built a strong foundation in academics and developed a keen interest in technology and problem-solving.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section bg-light">
+            <div class="section-container">
+                <h2 class="section-title">Get in Touch...</h2>
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <h3>Let's Talk</h3>
+                        <p>Feel free to reach out to me for any collaborations, opportunities, or just to say hello!</p>
+                    </div>
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn primary-btn submit-btn">Send Message</button>
+                            <p id="formStatus" class="form-status"></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Jeba Rosa. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
