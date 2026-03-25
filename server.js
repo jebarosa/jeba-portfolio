@@ -15,7 +15,7 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/portfolio
 .then(() => console.log('MongoDB connected successfully'))
 .catch(err => console.error('MongoDB connection error:', err));
 
-// Define Schema & Model
+// Schema & Model
 const ContactSchema = new mongoose.Schema({
     name: { type: String, required: true },
     email: { type: String, required: true },
@@ -25,11 +25,11 @@ const ContactSchema = new mongoose.Schema({
 
 const Contact = mongoose.model('Contact', ContactSchema);
 
-// Routes
+// ✅ POST Route
 app.post('/api/contact', async (req, res) => {
     try {
         const { name, email, message } = req.body;
-        
+
         if (!name || !email || !message) {
             return res.status(400).json({ error: 'All fields are required' });
         }
@@ -42,6 +42,11 @@ app.post('/api/contact', async (req, res) => {
         console.error('Error saving contact:', error);
         res.status(500).json({ error: 'Server error. Please try again later.' });
     }
+});
+
+// ✅ FIX ADDED HERE (Homepage route)
+app.get('/', (req, res) => {
+    res.send('Server is running successfully 🚀');
 });
 
 // Start Server
